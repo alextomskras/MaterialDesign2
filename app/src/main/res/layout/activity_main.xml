@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -30,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
-            
+            android:text="@string/test1"
             app:closeIcon="@drawable/ic_close_circle_black_24dp"
             app:closeIconEnabled="true" />
 
@@ -43,16 +44,17 @@
             <android.support.design.chip.Chip
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:chipText="Chip" />
+                android:text="Chip" />
 
             <android.support.design.chip.Chip
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/textgroup"
                 app:chipBackgroundColor="@color/colorAccent"
-                app:chipIcon="@drawable/ic_android_white_24dp"
-                app:chipText="Group" />
+                app:chipIcon="@drawable/ic_android_white_24dp" />
 
         </android.support.design.chip.ChipGroup>
+
 
         <android.support.design.card.MaterialCardView
             android:layout_width="wrap_content"
@@ -88,7 +90,7 @@
         android:layout_gravity="bottom"
         app:backgroundTint="@color/colorPrimary"
         app:fabAlignmentMode="end"
-        app:fabAttached="true" />
+        app:fabCradleRoundedCornerRadius="@dimen/cardview_compat_inset_shadow" />
 
 
 </android.support.design.widget.CoordinatorLayout>
